@@ -14,7 +14,7 @@ nltk.download('wordnet')
 lemmatizer = WordNetLemmatizer()
 
 
-intents = json.loads(open(r'C:\Users\adhik\Desktop\Chatrobot\intent.json').read())
+intents = json.loads(open(r'C:\Users\adhik\Desktop\Chatrobot\intent.json').read()) #aafno rakhne hai yo, keep your own path
 
 
 words = pickle.load(open('words.pkl', 'rb'))
