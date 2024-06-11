@@ -57,9 +57,9 @@ train_y = np.array(list(training[:, 1]))
 
 
 model = tf.keras.Sequential([
-    tf.keras.layers.Dense(128, input_shape=(len(train_x[0]),), activation='relu'),
+    tf.keras.layers.Dense(256, input_shape=(len(train_x[0]),), activation='relu'),
     tf.keras.layers.Dropout(0.5),
-    tf.keras.layers.Dense(64, activation='relu'),
+    tf.keras.layers.Dense(128, activation='relu'),
     tf.keras.layers.Dropout(0.5),
     tf.keras.layers.Dense(len(train_y[0]), activation='softmax')
 ])

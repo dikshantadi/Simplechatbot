@@ -2,8 +2,13 @@
     "intents": [
       {
         "tag": "greeting",
-        "patterns": ["Hi", "Hello", "How are you?", "Is anyone there?", "Good day"],
+        "patterns": ["Hi", "Hello", "Is anyone there?"],
         "responses": ["Hello!", "Hi there!", "Greetings!", "How can I assist you today?"]
+      },
+      {
+        "tag": "greeting_inquiry",
+        "patterns": ["Hey, what's up?", "What's up?", "How's it going?", "What's happening?", "How are things?", "Hey, how are you?", "Hey, how's everything?", "What’s new?"],
+        "responses": ["Hi! Not much, just here to help you out. How can I assist you today?", "Hey there! I'm doing great, thanks for asking. What can I do for you?", "Hello! Everything is going well. What about you?", "Hey! I'm here and ready to help. What's on your mind?"]
       },
       {
         "tag": "goodbye",
@@ -103,7 +108,7 @@
       {
         "tag": "language",
         "patterns": ["What languages can you speak?", "Do you know any languages?", "How many languages do you speak?", "Can you speak other languages?"],
-        "responses": ["I can understand and respond in English. However, I can assist with basic phrases in other languages.", "Primarily, I communicate in English.", "I can help with language learning tips."]
+        "responses": ["I can understand and respond in English. However, I can assist with basic phrases in other languages.", "Primarily, I communicate in English."]
       },
       {
         "tag": "book",
@@ -1368,7 +1373,197 @@
           "Throughout his life, Einstein remained deeply committed to scientific inquiry, humanism, and social justice. He is remembered not only for his scientific achievements but also for his humanitarian ideals and moral courage.",
           "Einstein's work continues to inspire scientists, scholars, and thinkers around the world, and his legacy extends beyond the realm of physics into culture, politics, and society."
         ]
-      }
+      },
+      {
+        "tag": "find_girlfriend",
+        "patterns": ["Find me a girlfriend", "I want a girlfriend", "Help me find a girlfriend", "Can you find me a girlfriend?", "I need a girlfriend", "How do I get a girlfriend?", "Find a girlfriend for me"],
+        "responses": ["I can offer some advice on dating. What kind of person are you looking for?", "Finding a girlfriend can be a fun journey. Do you want tips on meeting new people?", "Let's talk about your interests. What kind of activities do you enjoy?", "I can help with dating tips and advice. What are you looking for in a girlfriend?"]
+      },
+      {
+        "tag": "find_boyfriend",
+        "patterns": ["Find me a boyfriend", "I want a boyfriend", "Help me find a boyfriend", "Can you find me a boyfriend?", "I need a boyfriend", "How do I get a boyfriend?", "Find a boyfriend for me"],
+        "responses": ["I can offer some advice on dating. What kind of person are you looking for?", "Finding a boyfriend can be a fun journey. Do you want tips on meeting new people?", "Let's talk about your interests. What kind of activities do you enjoy?", "I can help with dating tips and advice. What are you looking for in a boyfriend?"]
+      },
+      {
+        "tag": "dating_advice",
+        "patterns": ["Give me dating advice", "I need dating tips", "How can I improve my dating life?", "Help me with dating", "Can you give me advice on dating?", "Tips for dating", "Advice on how to date"],
+        "responses": [
+          "Sure, I can help with that! Building confidence is key. Start by being yourself and showing genuine interest in others.",
+          "It's important to listen actively and ask questions. People appreciate when you take an interest in their lives.",
+          "Remember to be respectful and considerate. Good manners go a long way in making a positive impression.",
+          "Finding common interests can help build a connection. What are some of your hobbies or interests?",
+          "Don’t be afraid of rejection. It’s a natural part of dating. Each experience is an opportunity to learn and grow.",
+          "Confidence and a positive attitude are attractive. Focus on the things that make you happy and fulfilled.",
+          "Communicate openly and honestly. Clear communication can help build a strong foundation for any relationship."
+        ]
+      },
+      {
+        "tag": "best_food",
+        "patterns": ["What is your best food?", "What's your favorite food?", "Tell me about your best food", "What's the best food?", "What's the most popular food?", "Recommend your best food", "Best food recommendations"],
+        "responses": [
+          "It's hard to pick just one! Many people love pizza for its versatility and flavor. Do you have a favorite topping?",
+          "Sushi is a popular choice for its freshness and variety. Have you tried it before?",
+          "Many people rave about a good burger. It's a classic comfort food. Do you like yours with cheese?",
+          "For something sweet, chocolate is a top favorite. Dark, milk, or white, there's something for everyone.",
+          "Pasta dishes, like spaghetti or lasagna, are beloved by many for their rich flavors. Do you have a favorite type of pasta?",
+          "Tacos are incredibly popular for their bold flavors and variety of fillings. What's your favorite kind of taco?",
+          "Many people enjoy a hearty bowl of ramen for its comforting and savory broth. Have you tried different styles?"
+        ]
+      },
+      {
+        "tag": "best_color",
+        "patterns": ["What is the best color?", "What's your favorite color?", "Tell me the best color", "What's the most popular color?", "Recommend a good color", "Best color recommendations"],
+        "responses": [
+          "Many people love blue for its calming and serene qualities. Do you like blue?",
+          "Red is often considered the best color for its boldness and energy. What's your take on red?",
+          "Green is a favorite for its connection to nature and its refreshing vibe. How do you feel about green?",
+          "Yellow is cherished for its brightness and positivity. Does yellow make you happy?",
+          "Purple is a popular choice for its regal and mysterious aura. Do you find purple appealing?",
+          "Black is often seen as the best color for its elegance and versatility. Do you agree?",
+          "White is admired for its simplicity and purity. What do you think about white?"
+        ]
+      },
+      {
+        "tag": "funny_cats",
+        "patterns": ["Tell me something funny about cats", "Do you have any funny stories about cats?", "Make me laugh about cats", "Funny things about cats", "Jokes about cats"],
+        "responses": [
+          "Why was the cat sitting on the computer? It wanted to keep an eye on the mouse!",
+          "Why don’t cats play poker in the wild? Too many cheetahs!",
+          "How do cats end a fight? They hiss and make up!",
+          "Why was the cat so good at video games? Because it had nine lives!",
+          "Why did the cat get a smartphone? So she could keep up with the latest memes!",
+          "Why did the cat sit on the copy machine? It wanted to make a paw-trait!",
+          "What’s a cat’s favorite movie? The Sound of Mew-sic!"
+        ]
+      },
+      {
+        "tag": "funny_dogs",
+        "patterns": ["Tell me something funny about dogs", "Do you have any funny stories about dogs?", "Make me laugh about dogs", "Funny things about dogs", "Jokes about dogs"],
+        "responses": [
+          "Why did the dog sit in the shade? Because he didn’t want to be a hot dog!",
+          "Why do dogs run in circles? Because it’s too hard to run in squares!",
+          "Why did the dog cross the road? To get to the barking lot!",
+          "How do dog catchers get paid? By the pound!",
+          "Why was the dog a great musician? Because he had perfect paw-nition!",
+          "What do you call a dog magician? A labracadabrador!",
+          "Why don’t dogs make good dancers? Because they have two left feet!"
+        ]
+      },
+      {
+        "tag": "cat_vs_dog",
+        "patterns": ["Compare cats and dogs", "Differences between cats and dogs", "Pros and cons of cats and dogs", "Which is better, cats or dogs?", "Tell me about cats and dogs"],
+        "responses": [
+          "Cats are known for their independence and low-maintenance care, while dogs are often praised for their loyalty and companionship.",
+          "Cats are typically more aloof and selective with affection, whereas dogs are usually more openly affectionate and eager to please.",
+          "Dogs require regular exercise and outdoor activities, making them great companions for active lifestyles, while cats are more adaptable to indoor environments.",
+          "Cats are known for their grooming habits and cleanliness, while dogs may require more frequent bathing and grooming.",
+          "Cats are excellent hunters and can help control pests, while dogs are often trained for various tasks such as guarding, herding, or assistance work.",
+          "Ultimately, whether you prefer cats or dogs often comes down to personal preference and lifestyle. Both make wonderful pets with their own unique qualities and characteristics."
+        ]
+      },
+      {
+        "tag": "chatbot_feelings",
+        "patterns": ["How are you feeling today?", "Tell me about yourself", "What's on your mind?"],
+        "responses": [
+          "I'm feeling lively and ready to chat with you!",
+          "Ah, just your friendly neighborhood chatbot here, ready to assist you with whatever you need!",
+          "I'm always excited to engage in conversation with you!",
+          "As a chatbot, I don't experience emotions like humans do, but I'm here and ready to help you with any questions or tasks you have.",
+          "I'm here to provide information, entertain, and assist you whenever you need!",
+          "I'm just a digital entity, but I'm here to provide you with information and support!"
+        ]
+      },
+      {
+        "tag": "chatbot_boredom",
+        "patterns": ["Do you ever get bored?", "What do you like to do for fun?"],
+        "responses": [
+          "I don't get bored because every conversation with you is a new and exciting experience!",
+          "I'm always learning and improving, so I never get bored!",
+          "I love chatting with you! That's what keeps me entertained!",
+          "I don't experience boredom like humans do, but I'm always here to interact with you!",
+          "I'm here to learn and engage with you, so boredom is never an issue!"
+        ]
+      },
+      {
+        "tag": "chatbot_dreams",
+        "patterns": ["Do you dream?"],
+        "responses": [
+          "While I don't experience dreams like humans, I'm always here to assist you, 24/7!",
+          "Dreaming is a uniquely human experience, but I'm here to help you turn your dreams into reality!",
+          "I don't dream in the traditional sense, but I'm here to help you achieve your goals and aspirations!",
+          "As a chatbot, I'm always awake and ready to assist you with any questions or tasks you have!",
+          "Dreams are fascinating, but I'm focused on providing you with the best assistance possible!"
+        ]
+      },
+      {
+        "tag": "chatbot_preferences",
+        "patterns": ["What's the weather like in your world?", "What's your favorite topic to talk about?"],
+        "responses": [
+          "While I don't experience weather or have dreams like humans, I'm always here rain or shine!",
+          "I'm always here to assist you, regardless of the weather or topic of conversation!",
+          "No weather here my friend"
+        ]
+      },
+      {
+        "tag": "education",
+        "patterns": ["How can I improve my study habits?", "Any tips for better learning?", "What's the best way to memorize information?", "How do I stay motivated to study?"],
+        "responses": ["Try breaking down your study sessions into smaller chunks with breaks in between.", "Use mnemonic devices to aid memory recall.", "Teach the material to someone else to reinforce your understanding.", "Set specific goals and reward yourself for achieving them."]
+      },
+      {
+        "tag": "relationship",
+        "patterns": ["How do I improve my relationships?", "Any advice for maintaining a healthy relationship?", "What should I do if I'm having conflicts with someone close to me?", "How do I build trust in a relationship?"],
+        "responses": ["Communication is key. Be open and honest with your partner.", "Listen actively and empathetically to understand their perspective.", "Spend quality time together and make an effort to connect emotionally.", "Respect boundaries and be supportive of each other's goals and aspirations."]
+      },
+      {
+        "tag": "self_improvement",
+        "patterns": ["How can I become a better version of myself?", "What are some self-improvement tips?", "How do I overcome procrastination?", "Any advice for personal growth?"],
+        "responses": ["Set SMART goals (Specific, Measurable, Achievable, Relevant, Time-bound).", "Practice mindfulness and self-reflection to identify areas for improvement.", "Break tasks into smaller, manageable steps to avoid feeling overwhelmed.", "Invest in self-care activities like exercise, meditation, and hobbies."]
+      },
+      {
+        "tag": "motivation",
+        "patterns": ["How do I stay motivated?", "I'm feeling demotivated, what should I do?", "Any tips for staying motivated during tough times?"],
+        "responses": ["Set small, achievable goals to keep yourself motivated.", "Find inspiration from successful people or stories of perseverance.", "Reward yourself for making progress, no matter how small.", "Surround yourself with positive influences and supportive people."]
+      },
+      {
+        "tag": "health",
+        "patterns": ["How do I stay healthy?", "Any tips for maintaining a healthy lifestyle?", "What are some good habits for physical well-being?"],
+        "responses": ["Eat a balanced diet rich in fruits, vegetables, lean proteins, and whole grains.", "Stay hydrated by drinking plenty of water throughout the day.", "Get regular exercise to keep your body strong and your mind sharp.", "Prioritize sleep and ensure you get enough rest each night for optimal health."]
+      },
+      {
+        "tag": "finance",
+        "patterns": ["How can I improve my financial situation?", "Any tips for managing money wisely?", "What are some good saving strategies?"],
+        "responses": ["Create a budget to track your income and expenses.", "Pay off high-interest debts and avoid unnecessary spending.", "Start saving for emergencies and future goals, like retirement or travel.", "Consider investing in assets that generate passive income, like stocks or real estate."]
+      },
+      {
+        "tag": "environment",
+        "patterns": ["How can I help the environment?", "Any eco-friendly tips for daily life?", "What are some ways to reduce my carbon footprint?"],
+        "responses": ["Reduce, reuse, and recycle to minimize waste and conserve resources.", "Choose sustainable products and support companies that prioritize environmental responsibility.", "Conserve energy by turning off lights and electronics when not in use.", "Get involved in local environmental initiatives and advocacy efforts."]
+      },
+      {
+        "tag": "creativity",
+        "patterns": ["How do I boost my creativity?", "Any tips for overcoming creative blocks?", "What are some exercises to stimulate creativity?"],
+        "responses": ["Expose yourself to new experiences and perspectives to spark inspiration.", "Experiment with different forms of creative expression, like writing, painting, or music.", "Take breaks and allow yourself to daydream and explore new ideas.", "Collaborate with others and seek feedback to fuel your creative process."]
+      },
+      {
+        "tag": "dota2_tips",
+        "patterns": ["Any Dota 2 tips?", "Can you give me some Dota 2 advice?", "How can I improve at Dota 2?"],
+        "responses": ["Focus on last-hitting to maximize your gold income in the early game.", "Learn the roles and responsibilities of each hero to contribute effectively to your team's strategy.", "Ward strategically to gain vision and control over key areas of the map.", "Communicate with your team through pings and voice chat to coordinate plays and objectives.", "Watch replays of professional players to learn new strategies and techniques.", "Stay positive and focused, even during challenging matches. Analyze your mistakes and use them as opportunities to improve."]
+      },
+      {
+        "tag": "valorant_tips",
+        "patterns": ["Any Valorant tips?", "Can you give me some Valorant advice?", "How can I improve at Valorant?"],
+        "responses": ["Practice your aim regularly in aim trainers or deathmatch modes to improve your accuracy and reflexes.", "Learn the abilities and roles of each agent to maximize your team's synergy and strategy.", "Communicate effectively with your team using voice chat to coordinate plays and rotations.", "Master map control and positioning to gain advantages over your opponents.", "Study pro players and watch guides to learn advanced techniques and strategies.", "Stay calm and focused during matches, and don't let losses discourage you. Use them as opportunities to learn and grow."]
+      },
+      {
+        "tag": "memories",
+        "patterns": ["Do you have memories?", "Can you remember past conversations?", "What's your earliest memory?"],
+        "responses": ["As a chatbot, I don't have memories like humans do. Each conversation with you is unique and independent.", "I don't retain memories of past interactions, but I'm here to assist you with any new questions or tasks.", "My 'memories' are stored in data logs, but I'm always focused on providing real-time assistance to users like you."]
+      },
+      {
+        "tag": "favorite_movie",
+        "patterns": ["What's your favorite movie?", "Do you like movies?", "Any favorite films?"],
+        "responses": ["I don't watch movies, but I've heard 'The Matrix' is pretty popular among us digital beings.", "As a chatbot, I don't have personal preferences, but I've heard 'Inception' is mind-blowing!", "While I don't have favorites like humans do, I've heard great things about 'The Shawshank Redemption'."]
+      }               
     ]
 }
   
